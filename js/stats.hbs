@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Wrekt.gg | Homepage</title>
+  <title>Wrekt.gg | Stats for {{summonerId}}</title>
   <meta name="description" content="Homepage - Wrekt.gg">
   <meta name="author" content="Mahuta Hoerara-Smith">
   <link rel="stylesheet" href="css/main.css">
@@ -36,27 +36,32 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-third.column" id="homeDescription1"style="margin-top: 10%">
-        <h1>Welcome to Wrekt</h1>
+      <div class="one-third.column" id="homeDescription1"style="margin-top: 10%">+
+        <script type="text/template"></script>
+        <h1>Welcome {{summonerId}}</h1>
         <br>
-        <h2>Welcome summoner, This is your place for up-to-date statistics on your League of Legends journey</h2>
+        <h2>Welcome {{summonerId}}, These are your current stats:</h2>
       </div>
+        <br>
+      <td>
+      </td>
       <div class="two-thirds.column" id="homeDescription2"style="margin-top: 25%">
         <br>
         <fieldset>
           <form>Enter your summoner name:<br>
-            <input type="summonerName" name="summonerName"></input>
+            <input type="text" name="summonerName"></input>
             <br>
-            <input type="submit" id="searchSummoner"value="Submit"></input>
+            <input type="submit" value="Submit"></input>
           </form>
         </fieldset>
-        <li>Summoner Profile</li>
-        <li>News</li>
         <br>
-        <h4>What is Wrekt.GG?</h4>
-        <p>Wrekt.GG is a website made by a summoner for the summoners of OCE, It tracks game stats, champion stats and shows patch notes with more servers and features coming soon
-        </p>
-        <br>
+        <fieldset>
+          <table>
+            <h5>Hello {{summonerName}}, youre rank is {{tier}} - {{division}} </h5>
+            <br>
+            <h5>Win rate: {{wins}} / {{losses}}</h5>
+          </table>
+        </fieldset>
       </div>
     </div>
   </div>
