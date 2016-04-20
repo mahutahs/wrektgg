@@ -5,7 +5,7 @@ var request = require('request');
 var async = require('async')
 /*var lol = require('/lol.js');*/
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: ''}));
 
 app.set('view engine', 'handlebars');
 
