@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,11 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Wrekt.gg | Stats for {{summonerId}}</title>
+  <title>Wrekt.gg | Homepage</title>
   <meta name="description" content="Homepage - Wrekt.gg">
   <meta name="author" content="Mahuta Hoerara-Smith">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animation.css">
-  <script href="js/index.js"></script>
+  <link rel="stylesheet" href="/css/index.css">
+  <!--<script href=".../index.js"></script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,6 +31,36 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body>{{body}}</body>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-third.column" id="homeDescription1"style="margin-top: 10%">
+        <h1>Wrekt.GG</h1>
+          <br>
+        <h2>Welcome summoner, This is your place for up-to-date statistics on your League of Legends journey</h2>
+      </div>
+      <div class="two-thirds.column" id="homeDescription2"style="margin-top: 10%">
+        <br>
+        <fieldset>
+          <form>Enter your summoner name:<br>
+            <input type="summonerName" name="summonerName"></input>
+            <br>
+            <input type="submit" id="searchSummoner"value="Submit"></input>
+          </form>
+        </fieldset>
+        <li>Summoner Profile</li>
+        <li>News</li>
+        <br>
+        <h4>What is Wrekt.GG?</h4>
+        <p>Wrekt.GG is a website made by a summoner for the summoners of OCE, It tracks game stats, champion stats and shows patch notes with more servers and features coming soon
+        </p>
+        <br>
+        {{body}
+      </div>
+    </div>
+  </div>
+</body>
 </html>
 Made by Mahuta Hoerara-Smith, in partnership with Riot Games 2016
