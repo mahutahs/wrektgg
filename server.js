@@ -37,8 +37,8 @@ function(err,data) {
 
 	res.render('index', {
 		info: data
-	})
-})
+	});
+});
 
 });
 
