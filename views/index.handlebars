@@ -1,9 +1,32 @@
-<form action="/search" method="get">
-  <input type="text" id="summoner" name="summoner" placeholder="blahblah">
-</form>
-<ul>
-	<li>{{info.id}}</li>
-	<li>{{info.name}}</li>
-	<li>{{info.championName}}</li>
-	<li>{{info.timesPlayed}}</li>
-</ul>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-third.column" id="homeDescription1"style="margin-top: 10%">
+        <h1>Wrekt.GG</h1>
+          <br>
+        <h2>Welcome summoner, This is your place for up-to-date statistics on your League of Legends journey</h2>
+      </div>
+      <div class="two-thirds.column" id="homeDescription2"style="margin-top: 10%">
+        <br>
+        <fieldset>
+          <form action="/search" method="get">Enter your summoner name:<br>
+  			<input type="text" id="summoner" name="summoner" placeholder="Summoner Name">
+			</form>
+        </fieldset>
+        <li>Summoner Profile</li>
+        <li>News</li>
+        <br>
+        <ul>
+			<li>{{info.id}}</li>
+			<li>{{info.name}}</li>
+			<li>{{info.championName}}</li>
+			<li>{{info.timesPlayed}}</li>
+		</ul>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+Made by Mahuta Hoerara-Smith, in partnership with Riot Games 2016

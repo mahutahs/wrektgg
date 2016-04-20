@@ -5,19 +5,19 @@ var request = require('request');
 var async = require('async')
 /*var lol = require('/lol.js');*/
 
-app.engine('handlebars', exphbs({defaultLayout: ''}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 
 app.set('view engine', 'handlebars');
-
+app.use(express.static('./public'))
 app.get('/', function(req, res){
 	res.render('index');
 });
 
-app.get('/search', function(req, res){
+app.post('/search', function(req, res){
   var data = {};
   var api_key = '0502b72a-4912-4b5e-b71e-5ee60617b694';
-  var s_toSearch = req.query.summoner.toLowerCase();
-  
+  var s_toSearch = req.body.summonerName.toLowerCase();
+  console.log('here isthename',req.body);
 
 async.waterfall([
 	function(callback) {
